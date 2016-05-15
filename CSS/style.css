@@ -1,0 +1,233 @@
+/* BASIC SETTINGS */
+html, body {
+	overflow-x: hidden;
+}
+
+body {
+	font-family: "Merriweather";
+	color: #8B8B8B;
+	background: #FDFDFD;
+}
+
+h1 {
+	font-family: "Lora";
+	font-size: 50px;
+}
+
+h2 {
+	font-family: "Lora";
+	font-size: 40px;
+	line-height: 69px;
+}
+
+h3 {
+	font-family: "Lora";
+	font-size: 22px;
+}
+
+
+p {
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 34px;
+}
+
+a {
+	text-decoration: none;
+	color: #8B8B8B;
+}
+
+.page {
+	background-color: #FFFFFF;
+	box-shadow: 11px 2px 17px rgba(245, 245, 245, 0.3);
+	border-radius: 10px;
+}
+
+/* GRID */
+.container, .project-container, .page {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	position: relative;
+}
+
+.container:before,
+.container:after, 
+.project-container:before, 
+.project-container:after {
+	content: " ";
+	display: table;
+}
+
+.container:after, .project-container:after {
+	clear: both;
+}
+
+.one, .one-half, .one-third, .two-third {
+	float: left;
+	position: relative;
+	min-height: 1px;
+	margin-bottom: 5px;
+}
+
+/* CONTAINER MEDIA QUERIES */
+@media (min-width: 300px) and (max-width: 650px) {
+	.project-container, .container {
+		width: 90%;
+	}
+
+	.project-image {
+		width: 92%;
+		margin-bottom: 20px;
+	}
+
+	section .project {
+		margin-top: 100px;
+	}
+
+	.one, .one-half. .one-third, .two-third {
+		width: 90%;
+	}
+
+	.separator {
+		width: 94%;
+		height: 1px;
+	}
+
+}
+
+@media (min-width: 650px) {
+	.container {
+		width: 600px;
+	}
+
+	.project-container {
+		width: 500px;
+	}
+
+	.one {
+		width: 96%;
+	}
+
+	.one-half {
+		width: 45%;
+	}
+
+	.separator {
+		width: 100%;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		width: 750px;
+	}
+
+	.one-half {
+		width: 45%;
+	}
+
+	.one-third {
+		width: 53%;
+	}
+
+	.two-third {
+		width: 37%;
+	}
+
+	.separator {
+		width: 96%;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		width: 900px;
+	}
+
+	.project-container {
+		width: 700px;
+	}
+
+	.one-third {
+		width: 45%;
+	}
+
+	.two-third {
+		width: 45%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.page {
+		width: 940px;
+		margin-top: 60px;
+	}
+
+	.container {
+		width: 900px;
+	}
+
+	.one-third {
+		width: 40%;
+	}
+
+	.two-third {
+		width: 50%;
+	}
+}
+
+/* HEADER */
+.bookmark {
+	margin-top: -6px;
+}
+
+.navigation {
+	margin: -10px 0 0 230px;
+	font-family: "Lato";
+}
+
+.links {
+	margin: -55px 0 0 45px;
+}
+
+.links li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+
+/*nav {
+	background-color: black;
+}*/
+
+.fixedNavigation {
+	z-index: 150;
+}
+
+header, 
+.fixedNavigation {
+	position: fixed;
+}
+
+/* ME */
+.me {
+	margin: 140px 0;
+	text-align: center;
+}
+
+.homepageLine {
+	text-align: center;
+	margin-bottom: 500px;
+}
+
+
+
+
+
+
+
+
+
+
