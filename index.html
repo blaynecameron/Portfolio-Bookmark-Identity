@@ -54,7 +54,6 @@
 				</nav>
 			</div>
 		</header>
-
 		<main>
 			<!-- ME -->
 			<section class="container">
@@ -71,13 +70,12 @@
 	<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
 	<script type="text/javascript">
 		var mn = $(".mainNavigation");
-		var fixed = $(".fixedScrollNavigation");
 
-		$(window).scroll(function{
-			if ( $(this).scrollTop() > 10)  {
-				nav.addClass(fixed);
+		$(window).scroll(function() {
+			if ( $(this).scrollTop() > 75)  {
+				mn.addClass("fixedScrollNavigation");
 			} else {
-				nav.removeClass(fixed);
+				mn.removeClass("fixedScrollNavigation");
 			}
 		});
 	</script>
