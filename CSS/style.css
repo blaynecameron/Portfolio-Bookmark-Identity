@@ -41,6 +41,7 @@ a {
 	background-color: #FFFFFF;
 	box-shadow: 11px 2px 17px rgba(245, 245, 245, 0.3);
 	border-radius: 10px;
+	margin-top: 100px;
 }
 
 /* GRID */
@@ -162,7 +163,6 @@ a {
 @media (min-width: 1200px) {
 	.page {
 		width: 940px;
-		margin-top: 60px;
 	}
 
 	.container {
@@ -179,14 +179,30 @@ a {
 }
 
 /* HEADER */
-.bookmark {
-	margin-top: -6px;
-}
-
-.navigation {
+/*nav {
+	background-color: black;
+}*/
+.navigation,
+.fold {
 	margin: -10px 0 0 230px;
 	font-family: "Lato";
+	position: relative;
 }
+
+.bookmark {
+	margin-top: 4px;
+}
+
+.mainNavigation {
+	background-color: white;
+}
+
+/*.fixedScrollNavigation {
+	position: fixed;
+	top: 0;
+	z-index: 150;
+	width: 63%;
+}*/
 
 .links {
 	margin: -55px 0 0 45px;
@@ -195,20 +211,6 @@ a {
 .links li {
 	display: inline-block;
 	margin: 0 10px;
-}
-
-
-/*nav {
-	background-color: black;
-}*/
-
-.fixedNavigation {
-	z-index: 150;
-}
-
-header, 
-.fixedNavigation {
-	position: fixed;
 }
 
 /* ME */
