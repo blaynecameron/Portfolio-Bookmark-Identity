@@ -10,7 +10,7 @@
 	<link rel='icon' href='images/Favicon.png' type='image/png' >
 
 	<!-- GOOGLE FONTS -->
-	<link href='https://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Merriweather:300,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lora:700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
 	
@@ -20,11 +20,29 @@
 	<link rel="stylesheet" href="CSS/style.css">
 
 	<style type="text/css">
+		/*FIXED NAVIGATION*/
 		.fixedScrollNavigation {
 			position: fixed;
 			top: 0;
 			z-index: 150;
-			width: 63%;
+			background-color: rgba(255, 255, 255, 0.98);
+		}
+
+		@media (min-width: 650px) and (max-width: 750px) {
+			.fixedScrollNavigation {
+				margin-left: -6px;
+			}
+		}
+
+		@media (min-width: 650px) and (max-width: 1000px) {
+			.fixedScrollNavigation {	
+				width: 82%;
+			}
+		}
+
+		/* NAVIGATION SELECTION*/
+		.redHighlight {
+			color: #F18B8B;
 		}
 	</style>
 </head>
@@ -42,33 +60,97 @@
 							<a href="index.html"><img src="images/logo.png"/></a>
 						</div>
 						<div class="links">
-							<li><a href="">PORTFOLIO</a></li>
+							<li><a href="" class="portfolioLink">PORTFOLIO</a></li>
 							<img class="bullet" src="images/bullet.png"/>
-							<li><a href="">STORY</a></li>
+							<li class="storyLink"><a href="">STORY</a></li>
 							<img class="bullet" src="images/bullet.png"/>
-							<li><a href="">BLOG</a></li>
+							<li class="blogLink"><a href="">BLOG</a></li>
 							<img class="bullet" src="images/bullet.png"/>
-							<li><a href="">CONTACT</a></li>
+							<li class="contactLink"><a href="">CONTACT</a></li>
 						</div>
 					</div>
 				</nav>
 			</div>
 		</header>
-		<main>
+		<main class="center">
 			<!-- ME -->
 			<section class="container">
 				<div class="me">
 					<h2>Hi, I’m Blayne.<br> I’m a UX Designer,<br> Psychology Major and<br> dabbler in code.</h2>
 				</div>
 				<div class="homepageLine">
-				<img src="images/line.png"/>
+					<img src="images/line.png"/>
 				</div>
 			</section>
+
+			<!-- FREELANCE WORK -->
+			<section class="container">
+				<div class="project">
+					<h3>FREELANCE<br>WORK</h3>
+					<div class="firstProjectHeaderSpace">
+						<img src="images/teaTree.jpg"/>
+						<div>
+							<h5>Tea Tree Creperie</h5>
+							<div class="summary">
+								<p class="summary">Consult and website redesign<br>for an artsy cafe in Kingston,<br> Jamaica</p>
+								<p class="placeholderLink"><b>Case Study Coming Soon</b></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="homepageLine">
+					<img src="images/line.png"/>
+				</div>
+			</section>
+
+			<!-- PROJECTS -->
+			<section class="container">
+				<div class="project">
+					<h3>PROJECTS</h3>
+					<div class="firstProjectHeaderSpace">
+						<a href="index.html"><img src="images/vm.jpg"/></a>
+						<div>
+							<h5>ValueMine</h5>
+							<div class="summary">
+								<p class="summary">Finance App transforming<br>how we look at financial information<br>on smartphones</p>
+								<p class="link"><a href=""><b>Read More</b></a></p>
+							</div>
+						</div>
+					</div>
+					<div class="individualProjectSpacing">
+						<a href="index.html"><img src="images/pc.jpg"/></a>
+						<div>
+							<h5>Paycrave</h5>
+							<div class="summary">
+								<p class="summary">Food truck discovery app<br>to help people find and place<br>orders from nearby trucks</p>
+								<p class="link"><a href=""><b>Read More</b></a></p>
+							</div>
+						</div>
+					</div>
+					<div class="individualProjectSpacing">
+						<a href="index.html"><img src="images/pol.jpg"/></a>
+						<div>
+							<h5>Polaroid SX-70</h5>
+							<div class="summary">
+								<p class="summary">Imagining what a website for<br>the famous Polaroid SX-70<br>would have looked like </p>
+								<p class="link"><a href=""><b>Read More</b></a></p>
+							</div>
+						</div>
+					</div>
+					<div class="individualProjectSpacing">
+						<a href="index.html" class="button"><img src="images/moreProjectsButton.jpg"/></a>
+					</div>
+				</div>
+			</section>
+
+
+
 		</main>
 	</div>
 	<!-- JS -->
 	<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
 	<script type="text/javascript">
+		// Sticky Scroll
 		var mn = $(".mainNavigation");
 
 		$(window).scroll(function() {
@@ -78,6 +160,10 @@
 				mn.removeClass("fixedScrollNavigation");
 			}
 		});
+
+		// Navigation
+		$(".portfolioLink").addClass("redHighlight");
+
 	</script>
 	<!-- GOOGLE ANALYTICS -->
 	<script>

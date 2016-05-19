@@ -1,36 +1,46 @@
-/* BASIC SETTINGS */
+/* GENERAL */
 html, body {
 	overflow-x: hidden;
 }
 
 body {
 	font-family: "Merriweather";
+	font-weight: 300px;
 	color: #8B8B8B;
 	background: #FDFDFD;
 }
 
-h1 {
+h1, h2, h3, h4, h5 {
 	font-family: "Lora";
+}
+
+h1 {
 	font-size: 50px;
 }
 
 h2 {
-	font-family: "Lora";
 	font-size: 40px;
 	line-height: 69px;
 }
 
 h3 {
-	font-family: "Lora";
-	font-size: 22px;
+	font-size: 35px;
+}
+
+h4 {
+	font-size: 25px;
+}
+
+h5 {
+	font-size: 20px;
 }
 
 
-p {
+/*p {
 	font-size: 20px;
 	font-weight: 300;
 	line-height: 34px;
-}
+}*/
 
 a {
 	text-decoration: none;
@@ -41,11 +51,13 @@ a {
 	background-color: #FFFFFF;
 	box-shadow: 11px 2px 17px rgba(245, 245, 245, 0.3);
 	border-radius: 10px;
-	margin-top: 70px;
+	margin: 70px 0 180px;
 }
 
 /* GRID */
-.container, .project-container, .page {
+.container, 
+.project-container, 
+.page {
 	margin-right: auto;
 	margin-left: auto;
 	padding-left: 15px;
@@ -61,11 +73,15 @@ a {
 	display: table;
 }
 
-.container:after, .project-container:after {
+.container:after, 
+.project-container:after {
 	clear: both;
 }
 
-.one, .one-half, .one-third, .two-third {
+.one, 
+.one-half, 
+.one-third, 
+.two-third {
 	float: left;
 	position: relative;
 	min-height: 1px;
@@ -74,7 +90,12 @@ a {
 
 /* CONTAINER MEDIA QUERIES */
 @media (min-width: 300px) and (max-width: 650px) {
-	.project-container, .container {
+	.page {
+		width: 90%;
+	}
+
+	.project-container, 
+	.container {
 		width: 90%;
 	}
 
@@ -87,7 +108,10 @@ a {
 		margin-top: 100px;
 	}
 
-	.one, .one-half. .one-third, .two-third {
+	.one, 
+	.one-half.
+	.one-third,
+	.two-third {
 		width: 90%;
 	}
 
@@ -99,8 +123,12 @@ a {
 }
 
 @media (min-width: 650px) {
+	.page {
+		width: 92%;
+	}
+
 	.container {
-		width: 600px;
+		width: 80%;
 	}
 
 	.project-container {
@@ -122,7 +150,7 @@ a {
 
 @media (min-width: 768px) {
 	.container {
-		width: 750px;
+		width: 90%;
 	}
 
 	.one-half {
@@ -142,11 +170,7 @@ a {
 	}
 }
 
-@media (min-width: 992px) {
-	.container {
-		width: 900px;
-	}
-
+@media (min-width: 900px) {
 	.project-container {
 		width: 700px;
 	}
@@ -165,6 +189,10 @@ a {
 		width: 940px;
 	}
 
+	.container {
+		width: 900px;
+	}
+
 	.one-third {
 		width: 40%;
 	}
@@ -175,21 +203,25 @@ a {
 }
 
 /* HEADER */
+header {
+	margin-bottom: -50px; /* promote sticky */
+}
+
 .navigation,
 .fold {
-	margin: -10px 0 0 250px;
 	font-family: "Lato";
-	position: relative;
+	margin-top: -10px;
 }
 
 .bookmark {
-	margin-top: 4px;
+	margin-top: 3px;
 }
 
 .mainNavigation {
-	background-color: rgba(255, 255, 255, 0.98);
 	height: 60px; /* promote sticky */
 	margin-bottom: -50px; /* promote sticky */
+	z-index: 200;
+	position: relative;
 }
 
 .links {
@@ -198,20 +230,79 @@ a {
 
 .links li {
 	display: inline-block;
-	margin: 0 10px;
+	margin: 0 10px;	
+}
+
+@media (min-width: 650px) {
+	.navigation,
+	.fold {
+		margin-left: 12%;
+		width: 90%;
+	}
+}
+
+@media (min-width: 767px) {
+	.navigation,
+	.fold {
+		margin-left: 22%;
+	}
+}
+
+@media (min-width: 1000px) {
+	.navigation,
+	.fold {
+		margin-left: 250px;
+	}
+}
+
+/* PORTFOLIO PAGE */
+.center {
+	text-align: center;
+}
+
+.project {
+	margin: 140px 0;
+}
+
+.firstProjectHeaderSpace {
+	margin-top: 90px;
+}
+
+.individualProjectSpacing {
+	margin-top: 150px;
+}
+
+/* FONTS MEDIA QUERIES */
+@media (min-width: 300px) and (max-width: 650px) {
+	h2 {
+		font-size: 30px;
+		line-height: 59px;
+	}
 }
 
 /* ME */
 .me {
 	padding: 180px 0 80px 0; /* promote sticky */
-	text-align: center;
 }
 
-.homepageLine {
-	text-align: center;
-	margin-bottom: 500px;
+/* WORK */
+.summary {
+	margin: -25px 0 -10px;
+	font-size: 16px;
+	line-height: 35px;
 }
 
+.placeholderLink {
+	margin-top: 20px;
+}
+
+.link a {
+	color: #F18B8B;
+}
+
+.button {
+	margin-left: 5%;
+}
 
 
 
