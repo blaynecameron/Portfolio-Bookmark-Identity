@@ -16,6 +16,7 @@ h1, h2, h3, h4, h5 {
 
 h1 {
 	font-size: 50px;
+	margin: 260px 0 130px;
 }
 
 h2 {
@@ -34,13 +35,6 @@ h4 {
 h5 {
 	font-size: 20px;
 }
-
-
-/*p {
-	font-size: 20px;
-	font-weight: 300;
-	line-height: 34px;
-}*/
 
 a {
 	text-decoration: none;
@@ -255,6 +249,22 @@ header {
 	}
 }
 
+/* FOOTER */
+.footerLinks {
+	text-align: center;
+}
+
+.footerLinks li {
+	font-family: "Lato";
+	display: inline-block;
+	margin: 0 10px;	
+}
+
+footer {
+	padding: 180px 0 80px;
+}
+
+
 /* PORTFOLIO PAGE */
 .center {
 	text-align: center;
@@ -273,10 +283,29 @@ header {
 }
 
 /* FONTS MEDIA QUERIES */
+.regularText p {
+	margin: -7% 13% 0;
+	font-size: 20px;
+	line-height: 44px;
+}
+
 @media (min-width: 300px) and (max-width: 650px) {
 	h2 {
 		font-size: 30px;
 		line-height: 59px;
+	}
+
+	.regularText p {
+		margin: -20% 5% 0;
+		font-size: 16px;
+		line-height: 45px;
+	}
+}
+
+@media (min-width: 650px) and (max-width: 1000px) {
+	.regularText p {
+		margin: -10% 5% 0;
+		line-height: 50px;
 	}
 }
 
@@ -286,6 +315,10 @@ header {
 }
 
 /* WORK */
+.freelanceTitle {
+	line-height: 55px;
+}
+
 .summary {
 	margin: -25px 0 -10px;
 	font-size: 16px;
@@ -303,6 +336,8 @@ header {
 .button {
 	margin-left: 5%;
 }
+
+/* GENERAL */
 
 
 
