@@ -16,7 +16,6 @@ h1, h2, h3, h4, h5 {
 
 h1 {
 	font-size: 50px;
-	margin: 260px 0 130px;
 }
 
 h2 {
@@ -48,9 +47,12 @@ a {
 	margin: 70px 0 180px;
 }
 
+.pageTitle {
+	margin: 260px 0 8%;
+}
+
 /* GRID */
 .container, 
-.project-container, 
 .page {
 	margin-right: auto;
 	margin-left: auto;
@@ -60,26 +62,13 @@ a {
 }
 
 .container:before,
-.container:after, 
-.project-container:before, 
-.project-container:after {
+.container:after {
 	content: " ";
 	display: table;
 }
 
-.container:after, 
-.project-container:after {
+.container:after {
 	clear: both;
-}
-
-.one, 
-.one-half, 
-.one-third, 
-.two-third {
-	float: left;
-	position: relative;
-	min-height: 1px;
-	margin-bottom: 5px;
 }
 
 /* CONTAINER MEDIA QUERIES */
@@ -88,7 +77,6 @@ a {
 		width: 90%;
 	}
 
-	.project-container, 
 	.container {
 		width: 90%;
 	}
@@ -97,23 +85,6 @@ a {
 		width: 92%;
 		margin-bottom: 20px;
 	}
-
-	section .project {
-		margin-top: 100px;
-	}
-
-	.one, 
-	.one-half.
-	.one-third,
-	.two-third {
-		width: 90%;
-	}
-
-	.separator {
-		width: 94%;
-		height: 1px;
-	}
-
 }
 
 @media (min-width: 650px) {
@@ -123,22 +94,6 @@ a {
 
 	.container {
 		width: 80%;
-	}
-
-	.project-container {
-		width: 500px;
-	}
-
-	.one {
-		width: 96%;
-	}
-
-	.one-half {
-		width: 45%;
-	}
-
-	.separator {
-		width: 100%;
 	}
 }
 
@@ -158,17 +113,9 @@ a {
 	.two-third {
 		width: 37%;
 	}
-
-	.separator {
-		width: 96%;
-	}
 }
 
 @media (min-width: 900px) {
-	.project-container {
-		width: 700px;
-	}
-
 	.one-third {
 		width: 45%;
 	}
@@ -180,7 +127,7 @@ a {
 
 @media (min-width: 1000px) {
 	.page {
-		width: 940px;
+		width: 960px;
 	}
 
 	.container {
@@ -261,7 +208,7 @@ header {
 }
 
 footer {
-	padding: 180px 0 80px;
+	padding: 20% 0 80px;
 }
 
 
@@ -275,7 +222,7 @@ footer {
 }
 
 .firstProjectHeaderSpace {
-	margin-top: 90px;
+	margin-top: 5%;
 }
 
 .individualProjectSpacing {
@@ -283,29 +230,56 @@ footer {
 }
 
 /* FONTS MEDIA QUERIES */
+.regularText h4, .regularText h3 {
+	margin: 0 15% 18px;
+}
+
 .regularText p {
-	margin: -7% 13% 0;
+	margin: 0 15% 3%;
 	font-size: 20px;
 	line-height: 44px;
 }
 
 @media (min-width: 300px) and (max-width: 650px) {
+	h1 {
+		font-size: 40px;
+	}
+
 	h2 {
 		font-size: 30px;
-		line-height: 59px;
+		line-height: 50px;
+	}
+
+	h3 {
+		font-size: 25px;
+	}
+
+	h4 {
+		font-size: 20px;
+	}
+
+	.project h2 {
+		line-height: 35px;
+	}
+
+	.regularText h4, .regularText h3 {
+		margin: 0 5% 10px;
 	}
 
 	.regularText p {
-		margin: -20% 5% 0;
+		margin: 0 5% 5%;
 		font-size: 16px;
-		line-height: 45px;
+		line-height: 33px;
 	}
 }
 
 @media (min-width: 650px) and (max-width: 1000px) {
+	.regularText h4, .regularText h3 {
+		margin: 0 5% 10px;
+	}
+
 	.regularText p {
-		margin: -10% 5% 0;
-		line-height: 50px;
+		margin: 0 5% 5%;
 	}
 }
 
@@ -337,10 +311,64 @@ footer {
 	margin-left: 5%;
 }
 
-/* GENERAL */
+/* GENERAL PROJECT PAGE */
+.headingMargin {
+	margin: 280px 0 150px;
+}
 
+.headingMargin h1 {
+	margin: 1%;
+}
 
+.overviewTopMargin {
+	margin-top: 7%;
+}
 
+.overviewImage {
+	margin: 100px 0 15%;
+}
+
+.overviewImage img {
+	
+}
+
+.dotSeparator {
+	margin: 6% 0;
+}
+
+.dotSeparator img {
+	width: 7%;
+}
+
+.image img {
+	margin: 2% 0 9%;
+}
+
+.marginTop {
+	margin-top: 8%;
+}
+
+.buttonMargin {
+	margin-top: 10%;
+}
+
+@media (min-width: 300px) and (max-width: 1000px) {
+	.headingMargin {
+		margin: 60% 0 20%;
+	}
+
+	.overviewImage {
+		margin-top: 15%;
+	}
+
+	.overviewImage img {
+		width: 95%;
+	}
+
+	.image img {
+		width: 95%;
+	}
+}
 
 
 
