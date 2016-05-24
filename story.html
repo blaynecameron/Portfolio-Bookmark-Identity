@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>Blayne Chong | UX Designer</title>
+
+	<!-- FAVICON -->
+	<link rel='icon' href='images/Favicon.png' type='image/png' >
+
+	<!-- GOOGLE FONTS -->
+	<link href='https://fonts.googleapis.com/css?family=Merriweather:300,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lora:700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="CSS/font-awesome.css">
+	<link rel="stylesheet" href="CSS/normalize.css">
+	<link rel="stylesheet" href="CSS/style.css">
+
+	<style type="text/css">
+		/*FIXED NAVIGATION*/
+		.fixedScrollNavigation {
+			position: fixed;
+			top: 0;
+			z-index: 150;
+			width: 60%;
+			background-color: rgba(255, 255, 255, 0.98);
+		}
+
+		@media (min-width: 300px) and (max-width: 750px) {
+			.fixedScrollNavigation {
+				width: 80%;
+			}
+		}
+
+		@media (min-width: 650px) and (max-width: 750px) {
+			.fixedScrollNavigation {
+				margin-left: -6px;
+			}
+		}
+
+		@media (min-width: 650px) and (max-width: 1000px) {
+			.fixedScrollNavigation {	
+				width: 82%;
+			}
+		}
+
+		/* NAVIGATION SELECTION*/
+		.redHighlight {
+			color: #F18B8B;
+		}
+	</style>
+</head>
+<body>
+	<div class="page">
+		<!-- HEADER -->
+		<header>
+			<div class="container">
+				<div class="fold">
+					<a href=""><img src="images/fold.png"/></a>
+				</div>
+				<nav class="mainNavigation">
+					<div class="navigation">
+						<div class="bookmark">
+							<a href="index.html"><img src="images/logo.png"/></a>
+						</div>
+						<div class="links">
+							<li><a href="index.html" class="portfolioLink">PORTFOLIO</a></li>
+							<img class="bullet" src="images/bullet.png"/>
+							<li><a href="story.html" class="storyLink">STORY</a></li>
+							<img class="bullet" src="images/bullet.png"/>
+							<li><a href="blog.html" class="blogLink">BLOG</a></li>
+							<img class="bullet" src="images/bullet.png"/>
+							<li><a href="contact.html" class="contactLink">CONTACT</a></li>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<!-- PROJECTS -->
+			<section class="container">
+				<div>
+					<h1 class="center pageTitle">STORY</h1>
+					<div class="regularText">
+						<p>My name is Blayne and I’m a UX Designer, Psychology Major and dabbler in code. I am orignally from Kingston, Jamaica, but right now I am living in Toronto, Ontario where I design websites and mobile applications for clients.</p>
+						<!-- <p>My name is Blayne Chong and I grew up in Kingston, Jamaica. I'm a Freelance UX Designer currently living in Toronto, Ontario. I design, prototype and build simple but elegant web/mobile apps for clients.</p> -->
+						<!-- <p>Some people find their passion early in life. Developers who are passionate about coding, were generally introduced to computers early in life and fell in love almost immediately (i.e. Mark Zucceberg, Bill Gates). Unfortunately, for the rest of us finding your passion is trial and error. Well, at least this is the case in my story.</p> -->
+						<p>I've worked in various roles in my short time in this world and I've tried many things. I have a BA in Psychology, previously held postions in retail/wholesale, marketing and even entertained the idea of becoming a developer, having dabbled in HTML, CSS, JS, python and building apps using Obj-C. But, none of these feel as natural to me as UX Design, where design and psychology intersect. So, perhaps you need a UX Designer with a background in Psychology? <a class="paragraphLink" href="contact.html">Let's Talk.</a></p>
+						<!-- <p>I believe in using insights and observations gathered from human interaction with technolgy in order to solve problems. human observations into my work has always been my end goal after studying Psychology. So, if I think about my toolbox, Psychology offers me an </p> -->
+					</div>
+				</div>
+			</section>
+
+			<!-- FOOTER -->
+			<footer>
+				<div class="container">
+					<div class="footerLinks">
+						<li><a href="https://dribbble.com/blaynecameron" target="_blank">DRIBBBLE</a></li>
+						<img class="bullet" src="images/bullet.png"/>
+						<li><a href="https://github.com/blaynecameron" target="_blank">GITHUB</a></li>
+						<img class="bullet" src="images/bullet.png"/>
+						<li><a href="https://ca.linkedin.com/in/blaynechong" target="_blank">LINKEDIN</a></li>
+					</div>
+				</div>
+			</footer>
+
+		</main>
+	</div>
+	<!-- JS -->
+	<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+	<script type="text/javascript">
+		// Sticky Scroll
+		var mn = $(".mainNavigation");
+
+		$(window).scroll(function() {
+			if ( $(this).scrollTop() > 75)  {
+				mn.addClass("fixedScrollNavigation");
+			} else {
+				mn.removeClass("fixedScrollNavigation");
+			}
+		});
+
+		// Navigation
+		$(".storyLink").addClass("redHighlight");
+
+	</script>
+	<!-- GOOGLE ANALYTICS -->
+	<script>
+  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  		ga('create', 'UA-74668954-1', 'auto');
+  		ga('send', 'pageview');
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

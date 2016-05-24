@@ -1,0 +1,451 @@
+/* GENERAL */
+html, body {
+	overflow-x: hidden;
+}
+
+body {
+	font-family: "Merriweather";
+	font-weight: 300px;
+	color: #8B8B8B;
+	background: #FDFDFD;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: "Lora";
+}
+
+h1 {
+	font-size: 50px;
+}
+
+h2 {
+	font-size: 40px;
+	line-height: 69px;
+}
+
+h3 {
+	font-size: 35px;
+}
+
+h4 {
+	font-size: 25px;
+}
+
+h5 {
+	font-size: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: #8B8B8B;
+}
+
+.page {
+	background-color: #FFFFFF;
+	box-shadow: 11px 2px 17px rgba(245, 245, 245, 0.3);
+	border-radius: 10px;
+	margin: 70px 0 180px;
+}
+
+.pageTitle {
+	margin: 260px 0 8%;
+}
+
+/* GRID */
+.container, 
+.page {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	position: relative;
+}
+
+.container:before,
+.container:after {
+	content: " ";
+	display: table;
+}
+
+.container:after {
+	clear: both;
+}
+
+/* CONTAINER MEDIA QUERIES */
+@media (min-width: 300px) and (max-width: 650px) {
+	.page {
+		width: 90%;
+	}
+
+	.container {
+		width: 90%;
+	}
+
+	.project-image {
+		width: 92%;
+		margin-bottom: 20px;
+	}
+}
+
+@media (min-width: 650px) {
+	.page {
+		width: 92%;
+	}
+
+	.container {
+		width: 80%;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		width: 90%;
+	}
+
+	.one-half {
+		width: 45%;
+	}
+
+	.one-third {
+		width: 53%;
+	}
+
+	.two-third {
+		width: 37%;
+	}
+}
+
+@media (min-width: 900px) {
+	.one-third {
+		width: 45%;
+	}
+
+	.two-third {
+		width: 45%;
+	}
+}
+
+@media (min-width: 1000px) {
+	.page {
+		width: 960px;
+	}
+
+	.container {
+		width: 900px;
+	}
+
+	.one-third {
+		width: 40%;
+	}
+
+	.two-third {
+		width: 50%;
+	}
+}
+
+/* HEADER */
+header {
+	margin-bottom: -50px; /* promote sticky */
+}
+
+.navigation,
+.fold {
+	font-family: "Lato";
+	margin-top: -10px;
+}
+
+.bookmark {
+	margin-top: 3px;
+}
+
+.mainNavigation {
+	height: 60px; /* promote sticky */
+	margin-bottom: -50px; /* promote sticky */
+	z-index: 200;
+	position: relative;
+}
+
+.links {
+	margin: -55px 0 0 45px;
+}
+
+.links li {
+	display: inline-block;
+	margin: 0 10px;	
+}
+
+@media (min-width: 650px) {
+	.navigation,
+	.fold {
+		margin-left: 12%;
+		width: 90%;
+	}
+}
+
+@media (min-width: 767px) {
+	.navigation,
+	.fold {
+		margin-left: 22%;
+	}
+}
+
+@media (min-width: 1000px) {
+	.navigation,
+	.fold {
+		margin-left: 250px;
+	}
+}
+
+/* FOOTER */
+.footerLinks {
+	text-align: center;
+}
+
+.footerLinks li {
+	font-family: "Lato";
+	display: inline-block;
+	margin: 0 10px;	
+}
+
+footer {
+	padding: 20% 0 80px;
+}
+
+
+/* PORTFOLIO PAGE */
+.center {
+	text-align: center;
+}
+
+.project {
+	margin: 140px 0;
+}
+
+.firstProjectHeaderSpace {
+	margin-top: 5%;
+}
+
+.individualProjectSpacing {
+	margin-top: 150px;
+}
+
+/* FONTS MEDIA QUERIES */
+.regularText h4, .regularText h3 {
+	margin: 0 15% 18px;
+}
+
+.regularText p {
+	margin: 0 15% 3%;
+	font-size: 20px;
+	line-height: 44px;
+}
+
+@media (min-width: 300px) and (max-width: 650px) {
+	h1 {
+		font-size: 40px;
+	}
+
+	h2 {
+		font-size: 30px;
+		line-height: 50px;
+	}
+
+	h3 {
+		font-size: 25px;
+	}
+
+	h4 {
+		font-size: 20px;
+	}
+
+	.project h2 {
+		line-height: 35px;
+	}
+
+	.regularText h4, .regularText h3 {
+		margin: 0 5% 10px;
+	}
+
+	.regularText p {
+		margin: 0 5% 5%;
+		font-size: 16px;
+		line-height: 33px;
+	}
+}
+
+@media (min-width: 650px) and (max-width: 1000px) {
+	.regularText h4, .regularText h3 {
+		margin: 0 5% 10px;
+	}
+
+	.regularText p {
+		margin: 0 5% 5%;
+	}
+}
+
+/* ME */
+.me {
+	padding: 180px 0 80px 0; /* promote sticky */
+}
+
+/* WORK */
+.freelanceTitle {
+	line-height: 55px;
+}
+
+.summary {
+	margin: -25px 0 -10px;
+	font-size: 16px;
+	line-height: 35px;
+}
+
+.placeholderLink {
+	margin-top: 20px;
+}
+
+.link a {
+	color: #F18B8B;
+}
+
+.button {
+	margin-left: 5%;
+}
+
+/* GENERAL PROJECT PAGE */
+.headingMargin {
+	margin: 280px 0 150px;
+}
+
+.headingMargin h1 {
+	margin: 1%;
+}
+
+.overviewTopMargin {
+	margin-top: 7%;
+}
+
+.overviewImage {
+	margin: 100px 0 15%;
+}
+
+.overviewImage img {
+	
+}
+
+.dotSeparator {
+	margin: 6% 0;
+}
+
+.dotSeparator img {
+	width: 7%;
+}
+
+.image img {
+	margin: 2% 0 9%;
+}
+
+.marginTop {
+	margin-top: 8%;
+}
+
+.marginBottom {
+	margin-bottom: 11%;
+}
+
+.buttonMargin {
+	margin-top: 10%;
+}
+
+@media (min-width: 300px) and (max-width: 1000px) {
+	.headingMargin {
+		margin: 60% 0 20%;
+	}
+
+	.overviewImage {
+		margin-top: 15%;
+	}
+
+	.overviewImage img {
+		width: 95%;
+	}
+
+	.image img {
+		width: 95%;
+	}
+}
+
+
+/* STORY */
+.paragraphLink {
+	color: #F18B8B;
+}
+
+
+/* CONTACT */
+input,
+textarea {
+	padding-left: 10px;
+}
+
+.textField {
+	width: 600px;
+	height: 40px;
+	border-width: 3px;
+	border-color: #EAEAEA;
+	border-style: solid;
+	margin-bottom: 3.5%;
+	border-radius: 3px;
+}
+
+li {
+	list-style-type: none;
+}
+
+.textBoxes {
+	margin-left: -4%;
+}
+
+.messageField {
+	height: 300px;
+}
+
+.contactGreeting {
+	margin-bottom: 5%;
+}
+
+.sendButtonMargin {
+	margin-top: 2%;
+}
+
+.inputButton {
+	display: none;
+}
+
+.inputButton:hover {
+	cursor: pointer;
+	cursor: hand;
+}
+/*.contactButton {
+	background: url(sendButton.png) no-repeat;
+
+}*/
+
+@media (min-width: 300px) and (max-width: 650px) {
+	.textField {
+		width: 98%
+	}
+
+	.textBoxes {
+		margin-left: -15%;
+	}
+}
+
+@media (min-width: 650px) and (max-width: 1000px) {
+	.textField {
+		width: 98%
+	}
+}
+
+
+
+

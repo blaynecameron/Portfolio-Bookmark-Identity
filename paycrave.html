@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>Blayne Chong | UX Designer</title>
+
+	<!-- FAVICON -->
+	<link rel='icon' href='images/Favicon.png' type='image/png' >
+
+	<!-- GOOGLE FONTS -->
+	<link href='https://fonts.googleapis.com/css?family=Merriweather:300,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lora:700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="CSS/font-awesome.css">
+	<link rel="stylesheet" href="CSS/normalize.css">
+	<link rel="stylesheet" href="CSS/style.css">
+
+	<style type="text/css">
+		/*FIXED NAVIGATION*/
+		.fixedScrollNavigation {
+			position: fixed;
+			top: 0;
+			z-index: 150;
+			width: 920px;
+			background-color: rgba(255, 255, 255, 0.98);
+		}
+
+		@media (min-width: 300px) and (max-width: 750px) {
+			.fixedScrollNavigation {
+				width: 80%;
+			}
+		}
+
+		@media (min-width: 650px) and (max-width: 750px) {
+			.fixedScrollNavigation {
+				margin-left: -6px;
+			}
+		}
+
+		@media (min-width: 650px) and (max-width: 1000px) {
+			.fixedScrollNavigation {	
+				width: 82%;
+			}
+		}
+
+		/* NAVIGATION SELECTION*/
+		.redHighlight {
+			color: #F18B8B;
+		}
+	</style>
+</head>
+<body>
+	<div class="page">
+		<!-- HEADER -->
+		<header>
+			<div class="container">
+				<div class="fold">
+					<a href=""><img src="images/fold.png"/></a>
+				</div>
+				<nav class="mainNavigation">
+					<div class="navigation">
+						<div class="bookmark">
+							<a href="index.html"><img src="images/logo.png"/></a>
+						</div>
+						<div class="links">
+							<li><a href="index.html" class="portfolioLink">PORTFOLIO</a></li>
+							<img class="bullet" src="images/bullet.png"/>
+							<li><a href="story.html" class="storyLink">STORY</a></li>
+							<img class="bullet" src="images/bullet.png"/>
+							<li><a href="blog.html" class="blogLink">BLOG</a></li>
+							<img class="bullet" src="images/bullet.png"/>
+							<li><a href="contact.html" class="contactLink">CONTACT</a></li>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<!-- TITLE -->
+			<section class="container">
+				<div>
+					<div class="center headingMargin">
+						<img src="images/pcLogo.jpg"/>
+						<h1>PAYCRAVE</h1>
+					</div>
+					<div class="regularText overview">
+						<h4>Overview</h4>
+						<p>Paycrave is a project I did as part of my mentorship with Bloc. It includes wireframes and a clickable prototype for an Android app designed to help users to find and order from food trucks nearby.</p>
+					</div>
+					<div class="regularText overviewTopMargin">
+						<h4>The Problem</h4>
+						<p>Although it was an assignment, it's still a real problem. There are several apps that allow you to find and order from your favourite restaurants. But, you cannot do this with food trucks. There are apps that allow you to find food trucks, but you cannot order food from them.</p>
+					</div>
+					<div class="center overviewImage">
+						<img src="images/pcIntro.jpg"/>
+					</div>
+					<div class="center dotSeparator">
+						<img src="images/dotsSeparator.png"/>
+					</div>
+				</div>
+			</section>
+
+			<!-- STORIES -->
+			<section class="container">
+				<div>
+					<div class="regularText marginTop">
+						<h3>PROCESS</h3>
+						<p>The project had several requirements which I had to include in the design. So, I started off organizing the app requirements into a list of user stories.</p>
+					</div>
+					<div class="center image">
+						<img src="images/pcUserStories.png"/>
+					</div>
+					<div class="regularText">
+						<h4>User Flows</h4>
+						<p>Using the user stories, I sketched user flows to get a better idea of how users would navigate through the app and to also help me to start to think the features in greater detail. This included flows for new users and returning users, searching for food trucks and making purchases.</p>
+					</div>
+					<div class="center image">
+						<img src="images/pcFlow.jpg"/>
+					</div>
+					<div class="regularText">
+						<h4>Branding</h4>
+						<p>The logo, colour pallette and typography were all included with the project. So it was up to me to implement them in the wireframes.</p>
+					</div>
+					<div class="center image">
+						<img src="images/pcBrand.jpg"/>
+					</div>
+					<div class="regularText">
+						<h4>Pen and Paper</h4>
+						<p>The wireframe process for me almost always starts with good old fashioned pen and paper. Through these sketches I was able to determine the general layout of the various screens of the app and also to explore how navigation would feel and look like if a tab bar was used.</p>
+					</div>
+					<div class="center image">
+						<img src="images/pcSketch.jpg"/>
+					</div>
+					<div class="center dotSeparator">
+						<img src="images/dotsSeparator.png"/>
+					</div>
+				</div>
+			</section>
+
+			<!-- SPLASH SCREENS -->
+			<section class="container">
+				<div>
+					<div class="regularText marginTop">
+						<h3>SPLASH SCREENS</h3>
+						<p>Since Paycrave had a Sign In/Up feature I believed it would be a good opportunity to include some splash screens to further educate users on the benefits of the app and also to introduce the brand.</p>
+					</div>
+					<div class="center image">
+						<img src="images/pcSplash.jpg"/>
+					</div>
+					<div class="center dotSeparator">
+						<img src="images/dotsSeparator.png"/>
+					</div>
+				</div>
+			</section>
+
+			<!-- FOCUS -->
+			<section class="container">
+				<div>
+					<div class="regularText marginTop">
+						<h3>FOCUS</h3>
+						<p>The primary function of the app is to help users find and order from food trucks. But, there were also other features which were important, but did not necessarily deserve the spotlight. This included showing book marked food trucks, purchase history and settings. I decided that it would be better to place these features in a hamburger menu to hide them while keeping the display of food trucks in the forefront. This places the emphasis on the core function of the app making it easier for users to be able to find food trucks and make purchases more easily.</p>
+					</div>
+					<div class="center image">
+						<img src="images/pcFocus.jpg"/>
+					</div>
+					<div class="center dotSeparator">
+						<img src="images/dotsSeparator.png"/>
+					</div>
+				</div>
+			</section>
+
+			<!-- REDUCE -->
+			<section class="container">
+				<div>
+					<div class="regularText marginTop">
+						<h3>REDUCING CHECKOUT ERRORS</h3>
+						<p>Making purchases on smartphones can quickly become a huge pain point for users if there are too many steps involved. Therefore, having fewer steps from the point users select items and pay for them was of the utmost importance.The designs are made to break this down into a two step process from selecting items and making payments.</p>
+						<p>The cart button is also designed to be unique for each food truck profile. This is to prevent user’s from making any unnecessary mistakes, such as adding menu items from two different food trucks that are very far apart to the same cart.</p>
+						<p>Providing users with some indication that their payment was accepted and order was placed is also important. A third screen was included at the end of the checkout process to provide users with this confirmation.</p>
+					</div>
+					<div class="center image">
+						<img src="images/pcPay.jpg"/>
+					</div>
+					<div class="center buttonMargin">
+						<a href="https://projects.invisionapp.com/share/F95FEY7YU#/screens" target="_blank"><img src="images/prototypeButton.jpg"/></a>
+					</div>
+				</div>
+			</section>
+
+			<!-- FOOTER -->
+			<footer>
+				<div class="container">
+					<div class="footerLinks">
+						<li><a href="https://dribbble.com/blaynecameron" target="_blank">DRIBBBLE</a></li>
+						<img class="bullet" src="images/bullet.png"/>
+						<li><a href="https://github.com/blaynecameron" target="_blank">GITHUB</a></li>
+						<img class="bullet" src="images/bullet.png"/>
+						<li><a href="https://ca.linkedin.com/in/blaynechong" target="_blank">LINKEDIN</a></li>
+					</div>
+				</div>
+			</footer>
+
+		</main>
+	</div>
+	<!-- JS -->
+	<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+	<script type="text/javascript">
+		// Sticky Scroll
+		var mn = $(".mainNavigation");
+
+		$(window).scroll(function() {
+			if ( $(this).scrollTop() > 75)  {
+				mn.addClass("fixedScrollNavigation");
+			} else {
+				mn.removeClass("fixedScrollNavigation");
+			}
+		});
+
+		// Navigation
+		$(".portfolioLink").addClass("redHighlight");
+
+	</script>
+	<!-- GOOGLE ANALYTICS -->
+	<script>
+  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  		ga('create', 'UA-74668954-1', 'auto');
+  		ga('send', 'pageview');
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

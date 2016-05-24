@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>Blayne Chong | UX Designer</title>
+
+	<!-- FAVICON -->
+	<link rel='icon' href='images/Favicon.png' type='image/png' >
+
+	<!-- GOOGLE FONTS -->
+	<link href='https://fonts.googleapis.com/css?family=Merriweather:300,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lora:700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="CSS/font-awesome.css">
+	<link rel="stylesheet" href="CSS/normalize.css">
+	<link rel="stylesheet" href="CSS/style.css">
+
+	<style type="text/css">
+		/*FIXED NAVIGATION*/
+		.fixedScrollNavigation {
+			position: fixed;
+			top: 0;
+			z-index: 150;
+			width: 920px;
+			background-color: rgba(255, 255, 255, 0.98);
+		}
+
+		@media (min-width: 300px) and (max-width: 750px) {
+			.fixedScrollNavigation {
+				width: 80%;
+			}
+		}
+
+		@media (min-width: 650px) and (max-width: 750px) {
+			.fixedScrollNavigation {
+				margin-left: -6px;
+			}
+		}
+
+		@media (min-width: 650px) and (max-width: 1000px) {
+			.fixedScrollNavigation {	
+				width: 82%;
+			}
+		}
+
+		/* NAVIGATION SELECTION*/
+		.redHighlight {
+			color: #F18B8B;
+		}
+	</style>
+</head>
+<body>
+	<div class="page">
+		<!-- HEADER -->
+		<header>
+			<div class="container">
+				<div class="fold">
+					<a href=""><img src="images/fold.png"/></a>
+				</div>
+				<nav class="mainNavigation">
+					<div class="navigation">
+						<div class="bookmark">
+							<a href="index.html"><img src="images/logo.png"/></a>
+						</div>
+						<div class="links">
+							<li><a href="index.html" class="portfolioLink">PORTFOLIO</a></li>
+							<img class="bullet" src="images/bullet.png"/>
+							<li><a href="story.html" class="storyLink">STORY</a></li>
+							<img class="bullet" src="images/bullet.png"/>
+							<li><a href="blog.html" class="blogLink">BLOG</a></li>
+							<img class="bullet" src="images/bullet.png"/>
+							<li><a href="contact.html" class="contactLink">CONTACT</a></li>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<!-- TITLE -->
+			<section class="container">
+				<div>
+					<div class="center headingMargin">
+						<img src="images/vmTitle.jpg"/>
+						<h1>VALUEMINE</h1>
+					</div>
+					<div class="regularText overview">
+						<h4>Overview</h4>
+						<p>ValueMine is an app created to help value investors to determine the intrinsic value of companies by providing them with financial data. But, more importantly it transforms how we look at large amounts of financial information on our smartphones.</p>
+					</div>
+					<div class="regularText overviewTopMargin">
+						<h4>Target Market</h4>
+						<p>Most serious value investors already have their own methods for acquiring the information that they need. But the target market are casual value investors. We define them as people who have full time jobs, but trade on the side. Casual value investors generally have to go to great lengths in order to acquire and organize the information they need to make investments.</p>
+					</div>
+					<div class="center overviewImage">
+						<img src="images/vmGeneral.jpg"/>
+					</div>
+					<div class="center dotSeparator">
+						<img src="images/dotsSeparator.png"/>
+					</div>
+				</div>
+			</section>
+
+			<!-- RESEARCH -->
+			<section class="container">
+				<div>
+					<div class="center image marginTop">
+						<img src="images/vmPersonas.jpg"/>
+					</div>
+					<div class="regularText">
+						<h3>RESEARCH</h3>
+						<p>Most finance apps in the market only provide information about stock price or news. This is good for investors who make short term trades, but it does not add as much value to investors who use long-term strategies like value investors.</p>
+						<p>Value investors generally look at 10 years of financial information. But, this information is generally tedious for them to acquire as they either get it manually from SEC filings or by paying for APIs.</p>
+						<p>A casual value investor who I interviewed manually inputted financial data into a spreadsheet from SEC filings. A snapshot of a part of the  spreadsheet can be seen below. This process, as you can imagine is quite long and took him up to 2 hours to fill out 10 years of financial data per company. </p>
+					</div>
+					<div class="center image">
+						<img src="images/vmResearchData.jpg"/>
+					</div>
+					<div class="center dotSeparator">
+						<img src="images/dotsSeparator.png"/>
+					</div>
+				</div>
+			</section>
+
+			<!-- PROCESS -->
+			<section class="container">
+				<div>
+					<div class="regularText marginTop">
+						<h3>PROCESS</h3>
+						<p>Using the information from interviews I created several user stories to help me organize and prioritize features to include in the MVP (Minimum Viable Product). </p>
+						<p>We wanted to stick to the MVP model as much as possible, so that meant stripping down the app to its core functions. So, we had asked ourselves what is the most important thing for value investors and why? The answer is data. To be specific, current and historical financial information for companies.</p>
+						<p>With our new focus established, we decided that features like a sign in and search filter were  nice to haves opposed to being critical for the app to do it’s job which is display financial information.</p>
+					</div>
+					<div class="center image">
+						<img src="images/vmUserStories.jpg"/>
+					</div>
+					<div class="regularText">
+						<h4>More Intuitive</h4>
+						<p>Using the information from interviews I created several user stories to help me organize and prioritize features to include in the MVP (Minimum Viable Product). </p>
+						<p>We wanted to stick to the MVP model as much as possible, so that meant stripping down the app to its core functions. So, we had asked ourselves what is the most important thing for value investors and why? The answer is data. To be specific, current and historical financial information for companies.</p>
+						<p>With our new focus established, we decided that features like a sign in and search filter were  nice to haves opposed to being critical for the app to do it’s job which is display financial information.</p>
+					</div>
+					<div class="center image">
+						<img src="images/vmFlow.png"/>
+					</div>
+					<div class="center dotSeparator">
+						<img src="images/dotsSeparator.png"/>
+					</div>
+				</div>
+			</section>
+
+			<!-- PROCESS -->
+			<section class="container">
+				<div>
+					<div class="regularText marginTop">
+						<h3>NAME</h3>
+						<p>We wanted the name of the app to be unique so it would be easy to find in the App Store. But, we also wanted it to be relevant. Some early name explorations included “snowball” and “Pato”. “snowball” was inspired by Warren Buffet’s book, “The Snowball Effect” and “Pato”(duck in espanol) was inspired by rubber ducks of Warren Buffet that are given out at each meeting at Berkshire Hathaway.</p>
+						<p>Pato and snowball had meaning, but they are not unique. There are multiple apps that use these in their names and as a result searching for either returns a lot of results making it difficult for anyone to find your app. This problem does not happen With ValueMine. It is unique and easy to find. The name ValueMine was actually inspired by my friend who I developed the app with. While we worked on the app, he would always refer to it as “going into the mines”. The app is in a sense a mine. It is a mine of valuable financial data.</p>
+					</div>
+					<div class="regularText marginTop">
+						<h4>Branding</h4>
+						<p>People who invest place a lot of emphasis on the accuracy of numbers to make smart investment decisions. Therefore, ValueMine needed to convey a sense of trust and reliability through it’s logo and brand.</p>
+						<p>The act of mining is normally associated with mountains and resources such as precious metals. But, when mining these mountains for resources, it’s not like the resources are lying around everywhere in abundance. Rather, miners have to dig through a lot of dirt in order to uncover the resources they seek. Investing is a lot like this. Investors generally have to look tat a lot of companies before they are able to find one that meets their investment criteria. The logo is abstract and represents this struggle. The two triangles represent mountains and they overlap to form a smaller triangle which is the value one can expect to find. </p>
+						<p>Using colours with an app like this can potentially take a user’s attention away from what’s really important; the information. Because of this I chose to use neutral colours which would be very easy on the eyes and not take attention away from the data.</p>
+					</div>
+					<div class="center image">
+						<img src="images/vmBrand.jpg"/>
+					</div>
+					<div class="center dotSeparator">
+						<img src="images/dotsSeparator.png"/>
+					</div>
+				</div>
+			</section>
+
+			<!-- PROCESS -->
+			<section class="container">
+				<div>
+					<div class="regularText marginTop">
+						<h3>THE WATCHLIST</h3>
+						<p>Watchlists are common features in finance apps. They allow users to look at companies they own shares in or that they’d like to own shares in. The watchlist in ValueMine serves a similar purpose with a slight twist. We created it with the idea of also allowing users to be able to quickly view the value of a company.  So, aside from price we also displayed the P/E and P/B ratio which allow investors to see whether or not the company is potentially undervalued. But, having P/E, P/B and price in the same table caused the view to become cluttered.</p>
+					</div>
+					<div class="center image">
+						<img src="images/vmLofi.jpg"/>
+					</div>
+					<div class="center dotSeparator">
+						<img src="images/dotsSeparator.png"/>
+					</div>
+				</div>
+			</section>
+
+			<!-- PROCESS -->
+			<section class="container">
+				<div>
+					<div class="regularText marginTop">
+						<h3>REFINING THE WATCHLIST</h3>
+						<p>To simplify the way the information was displayed on the watchlist I chose to allow users to choose whether they wanted to display price, P/E or P/B at any given time. To do this I included a segmented control in the design which would allow users to choose which data type they would like to display.</p>
+					</div>
+					<div class="center image marginTop">
+						<img src="images/vmWatchlist.jpg"/>
+					</div>
+					<div class="center dotSeparator">
+						<img src="images/dotsSeparator.png"/>
+					</div>
+				</div>
+			</section>
+
+			<!-- FINANCIALS -->
+			<section class="container">
+				<div>
+					<div class="regularText marginTop">
+						<h3>DISPLAYING FINANCIALS</h3>
+						<p>Generally, investors will look at financial data in a spreadsheet. Doing this is fine on a desktop because it has a larger screen, but viewing spreadsheets on your smartphone can quickly become frustrating. The challenge for me was to figure out the best way to present all of this information without just using a spreadsheet. To make things more challenging, I wanted to display everything on one screen to reduce the amount of navigation a user had to make and provide a better user experience.</p>
+						<p>The company view was changed significantly in the final design. For this design I focused as much on separating the different types of information as I did on making the design appealing. </p>
+					</div>
+					<div class="center image">
+						<img src="images/vmDisplay.jpg"/>
+					</div>
+					<div class="center dotSeparator">
+						<img src="images/dotsSeparator.png"/>
+					</div>
+				</div>
+			</section>
+
+			<!-- REDESIGN -->
+			<section class="container">
+				<div>
+					<div class="regularText marginTop">
+						<h3>WHEN IN DOUBT REDESIGN</h3>
+						<p>After doing the early wireframes for the company financial view, I wasn’t satisfied. Deep down I knew that there was a better solution, so I started I started over. But, I didn’t throw out all of my ideas I kept the important ones such as the tab bar which helped break up the information into manageable groups. I knew that this would be a good way to display all the necessary informaiton in one screen and reduce navigation.</p>
+						<p>In early wireframes I experimented with having a tab bar at the top of the screen in order to accomodate all of the information and separate the different data types into manageable groups. Each screen had its own purpose, one providing a summary, one to display year-to-date financials and one designated to show historical financial information.</p>
+					</div>
+					<div class="regularText marginTop">
+						<h4>Health Check</h4>
+						<p>Financial ratios are of tremendous importance to value investors. They can indicate how healthy a company is. In the early wireframes the summary was given it’s own screen due to the amount of information that was displayed making it only visible if the user chose to see it. We decided that it would be better to display this information at all times. In order to accomodate the additional information we separated it into two views which are managed by a page controller. </p>
+					</div>
+					<div class="center image">
+						<img src="images/vmSummary.jpg"/>
+					</div>
+					<div class="regularText">
+						<h4>Reusing Earlier Ideas</h4>
+						<p>The idea for separating the year-to-date and historical financials was kept, but the form of it was changed. I decided it would be better to use Apple’s built in segmented control to manage this action because it was already being used in the watchlist and having the same controls would complement the design of the app.</p>
+						<p>The ten year financials in the end was set to be displayed on a separate view because of the amount of information thatis being displayed. The follow button was also changed to a plius sign and included on each company screen.</p>
+					</div>
+					<div class="center image">
+						<img src="images/vmCompany.jpg"/>
+					</div>
+					<div class="center dotSeparator">
+						<img src="images/dotsSeparator.png"/>
+					</div>
+				</div>
+			</section>
+
+			<!-- FIRST -->
+			<section class="container">
+				<div>
+					<div class="regularText marginTop">
+						<h3>FIRST APP</h3>
+						<p>After doing the early wireframes for the company financial view, I wasn’t satisfied. Deep down I knew that there was a better solution, so I started I started over. But, I didn’t throw out all of my ideas I kept the important ones such as the tab bar which helped break up the information into manageable groups. I knew that this would be a good way to display all the necessary informaiton in one screen and reduce navigation.</p>
+						<p>In early wireframes I experimented with having a tab bar at the top of the screen in order to accomodate all of the information and separate the different data types into manageable groups. Each screen had its own purpose, one providing a summary, one to display year-to-date financials and one designated to show historical financial information.</p>
+					</div>
+					<div class="center buttonMargin">
+						<a href="https://itunes.apple.com/ca/app/valuemine/id1071741457?mt=8" target="_blank"><img src="images/vmDownload.jpg"/></a>
+					</div>
+				</div>
+			</section>
+
+			<!-- FOOTER -->
+			<footer>
+				<div class="container">
+					<div class="footerLinks">
+						<li><a href="https://dribbble.com/blaynecameron" target="_blank">DRIBBBLE</a></li>
+						<img class="bullet" src="images/bullet.png"/>
+						<li><a href="https://github.com/blaynecameron" target="_blank">GITHUB</a></li>
+						<img class="bullet" src="images/bullet.png"/>
+						<li><a href="https://ca.linkedin.com/in/blaynechong" target="_blank">LINKEDIN</a></li>
+					</div>
+				</div>
+			</footer>
+
+		</main>
+	</div>
+	<!-- JS -->
+	<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+	<script type="text/javascript">
+		// Sticky Scroll
+		var mn = $(".mainNavigation");
+
+		$(window).scroll(function() {
+			if ( $(this).scrollTop() > 75)  {
+				mn.addClass("fixedScrollNavigation");
+			} else {
+				mn.removeClass("fixedScrollNavigation");
+			}
+		});
+
+		// Navigation
+		$(".portfolioLink").addClass("redHighlight");
+
+	</script>
+	<!-- GOOGLE ANALYTICS -->
+	<script>
+  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  		ga('create', 'UA-74668954-1', 'auto');
+  		ga('send', 'pageview');
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
