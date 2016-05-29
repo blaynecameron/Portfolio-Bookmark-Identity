@@ -51,7 +51,7 @@ a {
 	margin: 240px 0 8%;
 }
 
-@media (min-width: 300px) and (max-width: 650px) {
+@media (min-width: 300px) and (max-width: 800px) {
 	.page {
 		margin: 10px 0 10px;
 	}
