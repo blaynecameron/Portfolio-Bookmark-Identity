@@ -21,7 +21,7 @@
 @media (min-width: 300px) and (max-width: 650px) {
     .top-menu {
         top: 5px;
-        width: 25px;
+        width: 30px;
         height: 2px;
         border-radius: 10px;
         background-color: #F9A530;
@@ -29,7 +29,7 @@
 
     .mid-menu {
         top: 13px;
-        width: 25px;
+        width: 30px;
         height: 2px;
         border-radius: 10px;
         background-color: #F9A530;
@@ -37,7 +37,7 @@
 
     .bottom-menu {
         top: 21px;
-        width: 25px;
+        width: 30px;
         height: 2px;
         border-radius: 10px;
         background-color: #F9A530;
@@ -53,14 +53,14 @@
 
     .icon {
         z-index: 2000;
-        position: fixed;
+        position: relative;
         display: block;
         padding: 9px;
         height: 32px;
         width:32px;
-        margin: 75px 6% 0 0;
-        top: 0;
-        right: 0;
+        margin: 10px -3% -50px 0;
+        float: right;
+        
     }
 
     .mobilenav {
@@ -96,6 +96,7 @@
 
 @media (min-width: 650px) {
     .hamburgerMenu {
-        margin-left: -100%;
+        visibility: hidden;
+        /*margin-left: -100%;*/
     }
 }

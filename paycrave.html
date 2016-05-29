@@ -36,10 +36,6 @@
 			background-color: rgba(255, 255, 255, 0.98);
 		}
 
-		.hamburgerMenuMarginTop {
-			margin-top: 0px;
-		}
-
 		@media (min-width: 300px) and (max-width: 750px) {
 			.fixedScrollNavigation {
 				width: 80%;
@@ -99,21 +95,21 @@ setTimeout(ldinsp, 500); document.readyState != "complete" ? (window.attachEvent
 							<li><a href="contact.html" class="contactLink">CONTACT</a></li>
 						</div>
 					</div>
+					<!-- HAMBURGER -->
+					<div class="hamburgerMenu mobilenav">
+  						<li><a href="index.html" class="portfolioLink">PORTFOLIO</a></li>
+						<li><a href="story.html" class="storyLink">STORY</a></li>
+						<li><a href="blog.html" class="blogLink">BLOG</a></li>
+						<li><a href="contact.html" class="contactLink">CONTACT</a></li>
+					</div>
+					<a href="javascript:void(0)" class="icon">
+  						<div class="hamburger">
+   							<div class="menui top-menu"></div>
+    						<div class="menui mid-menu"></div>
+    						<div class="menui bottom-menu"></div>
+  						</div>
+					</a>
 				</nav>
-				<!-- HAMBURGER -->
-				<div class="hamburgerMenu mobilenav">
-  					<li><a href="index.html" class="portfolioLink">PORTFOLIO</a></li>
-					<li><a href="story.html" class="storyLink">STORY</a></li>
-					<li><a href="blog.html" class="blogLink">BLOG</a></li>
-					<li><a href="contact.html" class="contactLink">CONTACT</a></li>
-				</div>
-				<a href="javascript:void(0)" class="icon">
-  					<div class="hamburger">
-   						<div class="menui top-menu"></div>
-    					<div class="menui mid-menu"></div>
-    					<div class="menui bottom-menu"></div>
-  					</div>
-				</a>
 			</div>
 		</header>
 		<main>
@@ -252,10 +248,8 @@ setTimeout(ldinsp, 500); document.readyState != "complete" ? (window.attachEvent
 		$(window).scroll(function() {
 			if ( $(this).scrollTop() > 75)  {
 				mn.addClass("fixedScrollNavigation");
-				icon.addClass("hamburgerMenuMarginTop");
 			} else {
 				mn.removeClass("fixedScrollNavigation");
-				icon.removeClass("hamburgerMenuMarginTop");
 			}
 		});
 

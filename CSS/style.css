@@ -48,12 +48,12 @@ a {
 }
 
 .pageTitle {
-	margin: 180px 0 8%;
+	margin: 240px 0 8%;
 }
 
 @media (min-width: 300px) and (max-width: 650px) {
 	.pageTitle {
-		margin: 180px 0 10%;
+		margin: 190px 0 20%;
 	}
 }
 
@@ -326,7 +326,7 @@ footer {
 
 /* GENERAL PROJECT PAGE */
 .headingMargin {
-	margin: 160px 0 100px;
+	margin: 240px 0 100px;
 }
 
 .headingMargin h1 {
@@ -371,7 +371,7 @@ footer {
 
 @media (min-width: 300px) and (max-width: 650px) {
 	.headingMargin {
-		margin: 55% 0 15%;
+		margin: 200px 0 15%;
 	}
 
 	.overviewImage {
@@ -388,10 +388,6 @@ footer {
 }
 
 @media (min-width: 650px) and (max-width: 1000px) {
-	.headingMargin {
-		margin: 25% 0 15%;
-	}
-
 	.overviewImage {
 		margin-top: 15%;
 	}
