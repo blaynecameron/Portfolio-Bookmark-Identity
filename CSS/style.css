@@ -52,6 +52,10 @@ a {
 }
 
 @media (min-width: 300px) and (max-width: 650px) {
+	.page {
+		margin: 10px 0 10px;
+	}
+
 	.pageTitle {
 		margin: 190px 0 20%;
 	}
