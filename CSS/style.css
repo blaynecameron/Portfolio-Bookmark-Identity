@@ -48,8 +48,15 @@ a {
 }
 
 .pageTitle {
-	margin: 260px 0 8%;
+	margin: 180px 0 8%;
 }
+
+@media (min-width: 300px) and (max-width: 650px) {
+	.pageTitle {
+		margin: 180px 0 10%;
+	}
+}
+
 
 /* GRID */
 .container, 
@@ -172,6 +179,12 @@ header {
 .links li {
 	display: inline-block;
 	margin: 0 10px;	
+}
+
+@media (min-width: 300px) and (max-width: 650px) {
+	.links {
+		margin: -200px 0 0 0;
+	}
 }
 
 @media (min-width: 650px) {
@@ -313,7 +326,7 @@ footer {
 
 /* GENERAL PROJECT PAGE */
 .headingMargin {
-	margin: 280px 0 150px;
+	margin: 160px 0 100px;
 }
 
 .headingMargin h1 {
@@ -356,9 +369,27 @@ footer {
 	margin-top: 10%;
 }
 
-@media (min-width: 300px) and (max-width: 1000px) {
+@media (min-width: 300px) and (max-width: 650px) {
 	.headingMargin {
-		margin: 60% 0 20%;
+		margin: 55% 0 15%;
+	}
+
+	.overviewImage {
+		margin-top: 15%;
+	}
+
+	.overviewImage img {
+		width: 95%;
+	}
+
+	.image img {
+		width: 95%;
+	}
+}
+
+@media (min-width: 650px) and (max-width: 1000px) {
+	.headingMargin {
+		margin: 25% 0 15%;
 	}
 
 	.overviewImage {
