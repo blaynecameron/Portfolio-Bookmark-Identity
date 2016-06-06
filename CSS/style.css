@@ -330,6 +330,22 @@ footer {
 	margin-left: 5%;
 }
 
+@media (min-width: 300px) and (max-width: 500px) {
+	.summary {
+		font-size: 14px;
+		line-height: 30px;
+	}
+
+	.portfolioImage {
+		width: 18%;
+	}
+
+	.button img {
+		width: 200px;
+		margin-bottom: 10%;
+	}
+}
+
 /* GENERAL PROJECT PAGE */
 .headingMargin {
 	margin: 240px 0 100px;
