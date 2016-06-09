@@ -265,11 +265,11 @@ footer {
 
 @media (min-width: 300px) and (max-width: 650px) {
 	h1 {
-		font-size: 35px;
+		font-size: 30px;
 	}
 
 	h2 {
-		font-size: 30px;
+		font-size: 28px;
 		line-height: 50px;
 	}
 
@@ -313,6 +313,10 @@ footer {
 /* ME */
 .me {
 	padding: 180px 0 80px 0; /* promote sticky */
+}
+
+.top {
+	margin-top: 80px;
 }
 
 /* WORK */
