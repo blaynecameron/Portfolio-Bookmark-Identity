@@ -236,6 +236,10 @@ footer {
 	text-align: center;
 }
 
+.leftAlignText {
+	text-align: left;
+}
+
 .project {
 	margin: 140px 0;
 }
@@ -452,6 +456,10 @@ li {
 
 .textBoxes {
 	margin-left: -4%;
+}
+
+.textBoxes textarea {
+	padding-top: 10px;
 }
 
 .messageField {
