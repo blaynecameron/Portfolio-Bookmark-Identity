@@ -7,7 +7,7 @@ body {
 	font-family: "Merriweather";
 	font-weight: 300px;
 	color: #8B8B8B;
-	background: #FDFDFD;
+	background: #FAFAFA;
 }
 
 h1, h2, h3, h4, h5 {
@@ -65,7 +65,7 @@ a {
 
 
 /* GRID */
-.container, 
+.container,
 .page {
 	margin-right: auto;
 	margin-left: auto;
@@ -184,7 +184,7 @@ header {
 
 .links li {
 	display: inline-block;
-	margin: 0 10px;	
+	margin: 0 10px;
 }
 
 @media (min-width: 300px) and (max-width: 650px) {
@@ -223,7 +223,7 @@ header {
 .footerLinks li {
 	font-family: "Lato";
 	display: inline-block;
-	margin: 0 10px;	
+	margin: 0 10px;
 }
 
 footer {
@@ -372,7 +372,7 @@ footer {
 }
 
 .overviewImage img {
-	
+
 }
 
 .dotSeparator {
@@ -506,7 +506,3 @@ li {
 		width: 98%
 	}
 }
-
-
-
-
